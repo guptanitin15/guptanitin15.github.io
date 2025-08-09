@@ -5,8 +5,8 @@ permalink: /posts/
 author_profile: true
 ---
 
-{% include base_path %}
-
-{% for post in site.posts %}
+{% for post in paginator.posts %}
   {% include archive-single.html type="grid" %}
 {% endfor %}
+
+{% include paginator.html %}
