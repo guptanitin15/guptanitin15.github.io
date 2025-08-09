@@ -1,11 +1,13 @@
 main:
   - title: "Home"
     url: /
-  - title: "Blog"
-    url: /posts/
-  - title: "Categories"
-    url: /categories/
-  - title: "Tags"
-    url: /tags/
+  - title: "Tech"
+    url: /categories/tech/
+  - title: "Travels"
+    url: /categories/travels/
+  - title: "Books"
+    url: /categories/books/
+  - title: "Quotes"
+    url: /categories/quotes/
   - title: "About"
     url: /about/

@@ -1,94 +1,42 @@
-# Site settings
-title: "Nitin Gupta's Blog"
-email: "you@example.com"
-description: >-
-  Data engineering, travel, books, and favorite quotes.
+title: "Nitin Gupta"
+description: "Tech, Travel, Books, and Quotes"
 url: "https://nitingupta.in"
-baseurl: "" # leave empty if deploying to root domain
+baseurl: ""
 
-# Theme
-remote_theme: "mmistakes/minimal-mistakes@4.24.0#pagesfix"
+remote_theme: "mmistakes/minimal-mistakes@4.24.0"
 
-# Author
+plugins:
+  - jekyll-paginate
+  - jekyll-sitemap
+  - jekyll-feed
+  - jekyll-archives
+
 author:
   name: "Nitin Gupta"
-  avatar: "/assets/images/avatar.jpg"
-  bio: "Data engineer, traveler, book lover, and quote collector."
+  bio: "Exploring the intersections of tech, journeys, and words."
   location: "India"
+  email: "gupta.nitin015@gmail.com"
   links:
-    - label: "Email"
-      icon: "fas fa-envelope"
-      url: "mailto:gupta.nitin015@gmail.com"
     - label: "GitHub"
       icon: "fab fa-github"
       url: "https://github.com/guptanitin15"
-    - label: "Twitter"
-      icon: "fab fa-twitter"
-      url: "https://twitter.com/guptanitin15"
+    - label: "LinkedIn"
+      icon: "fab fa-linkedin"
+      url: "https://linkedin.com/in/guptanitin15"
 
-# Plugins (only those allowed by GitHub Pages)
-plugins:
-  - jekyll-feed
-  - jekyll-sitemap
-  - jekyll-paginate
-  - jekyll-archives
-  - jemoji
+minimal_mistakes_skin: "default"
 
-# Pagination
 paginate: 5
 paginate_path: "/page:num/"
 
-# Defaults for posts
 defaults:
   - scope:
       path: ""
-      type: posts
+      type: "posts"
     values:
       layout: single
       author_profile: true
       read_time: true
       comments: false
-      share: true
+      share: false
       related: true
-
-# Navigation
-header_pages:
-  - index.md
-  - posts.md
-  - about.md
-
-# Footer links
-footer:
-  links:
-    - label: "GitHub"
-      icon: "fab fa-github"
-      url: "https://github.com/guptanitin15"
-    - label: "Twitter"
-      icon: "fab fa-twitter"
-      url: "https://twitter.com/guptanitin15"
-    - label: "Email"
-      icon: "fas fa-envelope"
-      url: "mailto:gupta.nitin015@gmail.com"
-
-# Markdown & permalink settings
-markdown: kramdown
-permalink: /:categories/:title/
-
-# Archives
-jekyll-archives:
-  enabled:
-    - categories
-    - tags
-  layouts:
-    category: archive
-    tag: archive
-  permalinks:
-    category: /categories/:name/
-    tag: /tags/:name/
-
-# Exclude unnecessary files from the build
-exclude:
-  - Gemfile
-  - Gemfile.lock
-  - node_modules
-  - vendor
