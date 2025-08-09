@@ -7,7 +7,7 @@ url: "https://nitingupta.in"
 baseurl: "" # leave empty if deploying to root domain
 
 # Theme
-remote_theme: "mmistakes/minimal-mistakes@4.24.0"
+remote_theme: "mmistakes/minimal-mistakes@4.24.0#pagesfix"
 
 # Author
 author:
